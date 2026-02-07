@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Detail</title>
+  <link rel="stylesheet" href="/ui/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>Детали обращения</h1>
+      <a class="button-link" href="/admin/requests">Назад к списку</a>
+    </div>
+
+    <div class="panel detail-layout">
+      <div class="detail-header">
+        <div class="detail-title">
+          <h2>Анна Соколова · anna.sokolova@atlas.io</h2>
+          <span>ID 1287 · Отправлено: 15 апреля 2024, 09:45</span>
+        </div>
+        <div class="detail-meta">
+          <label>
+            Статус
+            <select class="select" name="status">
+              <option value="new" selected>new</option>
+              <option value="in_progress">in_progress</option>
+              <option value="done">done</option>
+            </select>
+          </label>
+          <span>Источник: портал клиентов</span>
+        </div>
+      </div>
+
+      <div class="text-block">
+        Не могу открыть акт, отображается пустой экран при загрузке документа. Пробовали через
+        Chrome и Edge, результат одинаковый. В приложении карточка висит в статусе «На проверке».
+        Также прикладываю скриншоты из личного кабинета и мобильного приложения.
+      </div>
+
+      <div>
+        <h2>Фото</h2>
+        <div class="photo-grid">
+          <div class="photo-card">
+            <div class="photo-preview"></div>
+            <a href="/admin/photos/501">Открыть /admin/photos/501</a>
+          </div>
+          <div class="photo-card">
+            <div class="photo-preview"></div>
+            <a href="/admin/photos/502">Открыть /admin/photos/502</a>
+          </div>
+          <div class="photo-card">
+            <div class="photo-preview"></div>
+            <a href="/admin/photos/503">Открыть /admin/photos/503</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
