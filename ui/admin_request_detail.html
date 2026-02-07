@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Requests</title>
+  <link rel="stylesheet" href="/ui/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>Обращения клиентов</h1>
+      <a class="button-link" href="/admin/requests">Все обращения</a>
+    </div>
+
+    <div class="container">
+      <aside class="panel">
+        <h2>Folders</h2>
+        <div class="folder-list">
+          <a class="folder active" href="/admin/requests">
+            <span>New</span>
+            <span>3</span>
+          </a>
+          <a class="folder" href="/admin/requests">
+            <span>In work</span>
+            <span>2</span>
+          </a>
+          <a class="folder" href="/admin/requests">
+            <span>Done</span>
+            <span>2</span>
+          </a>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <h2>Requests</h2>
+        <div class="list">
+          <a class="list-item selected new" href="/admin/requests/1287">
+            <div class="list-main">
+              <div class="list-title">
+                Анна Соколова
+                <span>Сегодня, 09:45</span>
+              </div>
+              <div class="list-snippet">Не могу открыть акт, отображается пустой экран при загрузке документа.</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-new">new</span>
+              <span class="chip">3 photos</span>
+            </div>
+          </a>
+
+          <a class="list-item new" href="/admin/requests/1286">
+            <div class="list-main">
+              <div class="list-title">
+                Дмитрий Литвиненко
+                <span>Сегодня, 08:12</span>
+              </div>
+              <div class="list-snippet">Клиенты видят неверный статус доставки в личном кабинете.</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-new">new</span>
+              <span class="chip">1 photo</span>
+            </div>
+          </a>
+
+          <a class="list-item" href="/admin/requests/1285">
+            <div class="list-main">
+              <div class="list-title">
+                Ольга Смирнова
+                <span>Вчера, 18:20</span>
+              </div>
+              <div class="list-snippet">Нужна настройка уведомлений по заявкам для новой команды.</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-in_progress">in_progress</span>
+              <span class="chip">0 photos</span>
+            </div>
+          </a>
+
+          <a class="list-item" href="/admin/requests/1284">
+            <div class="list-main">
+              <div class="list-title">
+                Павел Орлов
+                <span>Вчера, 16:03</span>
+              </div>
+              <div class="list-snippet">После обновления пропали фильтры по складам, требуется восстановление.</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-in_progress">in_progress</span>
+              <span class="chip">2 photos</span>
+            </div>
+          </a>
+
+          <a class="list-item" href="/admin/requests/1283">
+            <div class="list-main">
+              <div class="list-title">
+                Мария Колесникова
+                <span>12 апр, 11:05</span>
+              </div>
+              <div class="list-snippet">Спасибо за быстрый ответ по интеграции, всё заработало.</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-done">done</span>
+              <span class="chip">0 photos</span>
+            </div>
+          </a>
+
+          <a class="list-item" href="/admin/requests/1282">
+            <div class="list-main">
+              <div class="list-title">
+                Сергей Никитин
+                <span>11 апр, 15:50</span>
+              </div>
+              <div class="list-snippet">Подскажите, как сменить ответственного в карточке обращения?</div>
+            </div>
+            <div class="chips">
+              <span class="chip status-done">done</span>
+              <span class="chip">1 photo</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <aside class="panel preview-panel">
+        <h2>Preview</h2>
+        <div class="preview-card">
+          <div class="preview-header">
+            <h3>Анна Соколова</h3>
+            <span>anna.sokolova@atlas.io · Сегодня, 09:45</span>
+          </div>
+          <div class="preview-text">
+            Не могу открыть акт, отображается пустой экран при загрузке документа. Пробовали через
+            Chrome и Edge, результат одинаковый. В приложении карточка висит в статусе «На проверке».
+          </div>
+          <div class="preview-actions">
+            <a class="button-link" href="/admin/requests/1287">Открыть обращение</a>
+            <a class="button-link" href="/admin/photos/501">Фото 1</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
